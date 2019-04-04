@@ -1,0 +1,167 @@
+body {
+  background-color: #f9e1bf !important;
+}
+
+.jumbotron {
+  background-color: #df9733 !important;
+  padding: 2em 0;
+}
+
+.jumbotron h1 {
+  font-size: 4em;
+  font-weight: bold;
+}
+
+.left-burger {
+  float: left;
+}
+
+.right-burger {
+  float: right;
+}
+
+.top-bread {
+  width: 350px;
+  min-height: 80px;
+  margin-top: 70px;
+  margin-bottom: 10px;
+  background-color: #df9c40;
+  border-radius: 80px 80px 10px 10px;
+}
+
+.top-bread a {
+  font-size: 1.4em;
+  font-weight: bold;
+  line-height: 80px;
+  color: #734b13;
+  text-decoration: none;
+}
+
+.botton-bread {
+  width: 350px;
+  min-height: 80px;
+  margin-top: 10px;
+  background-color: #df9c40;
+  border-radius: 10px 10px 80px 80px;
+}
+
+.burger {
+  width: 350px;
+  min-height: 40px;
+  background-color: rgba(44, 40, 34, 0.7);
+  border-radius: 20px 20px 20px 20px;
+  margin-bottom: 5px;
+}
+
+.burger table {
+  margin: 0 10px;
+}
+
+.burger td {
+  width: 100%;
+  height: 40px;
+}
+
+.burger button {
+  background: none;
+  border: none;
+  color: #bb8718;
+  font-size: 1.5em;
+}
+
+.burger button:focus {
+  outline: none;
+}
+
+.burger button:hover {
+  color: #e6b54b;
+}
+
+.burger button .fa-trash {
+  color: #6d3737;
+}
+
+.burger button .fa-trash:hover {
+  color: #b93434;
+}
+
+.burgerFont {
+  color: #f9e1bf;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-weight: bold;
+}
+
+#newBurgerBlock {
+  display: none;
+  height: 45px;
+}
+
+#newBurgerBlock button {
+  background: none;
+  border: none;
+  color: #bb8718;
+  font-size: 1.5em;
+}
+
+#newBurgerBlock button:focus {
+  outline: none;
+}
+
+#newBurgerBlock button:hover {
+  color: #e6b54b;
+}
+
+#newBurgerBlock input {
+  width: 85%;
+  margin: auto;
+  display: block;
+  line-height: 35px;
+  background: none;
+  border: none;
+}
+
+#newBurgerBlock input:focus {
+  outline: none;
+}
+
+#newBurgerBlock:focus-within {
+  -webkit-box-shadow: 0 0 3pt 2pt #eea60b;
+          box-shadow: 0 0 3pt 2pt #eea60b;
+}
+
+#newBurger:hover {
+  cursor: pointer;
+  -webkit-animation: open 2s linear infinite;
+          animation: open 2s linear infinite;
+}
+
+@-webkit-keyframes open {
+  50% {
+    -webkit-transform-origin: left bottom;
+            transform-origin: left bottom;
+    -webkit-transform: rotate(-10deg);
+            transform: rotate(-10deg);
+  }
+  100% {
+    -webkit-transform-origin: left bottom;
+            transform-origin: left bottom;
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+}
+
+@keyframes open {
+  50% {
+    -webkit-transform-origin: left bottom;
+            transform-origin: left bottom;
+    -webkit-transform: rotate(-10deg);
+            transform: rotate(-10deg);
+  }
+  100% {
+    -webkit-transform-origin: left bottom;
+            transform-origin: left bottom;
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+}
+/*# sourceMappingURL=burger_style.css.map */

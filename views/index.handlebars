@@ -1,0 +1,34 @@
+<div class="jumbotron header">
+  <div class="container">
+    <h1 class="display-2 text-center ">Eat-Da-Burger!</h1>
+  </div>
+</div>
+<div class="container">
+      <div class="wrapper">
+          <div class="left-burger ">
+              <div id="newBurger" class="top-bread text-center" ><a href="#" >New Burger</a></div>
+                    {{#each burgers}}
+                        {{#unless devoured}}
+                            {{> burgers/burger-block devoured=false}}
+                        {{/unless}}
+                    {{/each}}
+              <div id="eatBurger" class="botton-bread"></div>
+          </div>
+
+          <div id="newBurgerBlock"  class="burger float-left">
+              <form class="form form-inline">
+                <input class="burgerFont" type="text" id="burger_name" name="burger_name">
+                <button type="submit" href="#"><i class="fas fa-hamburger"></i> </button>
+              </form>
+          </div>
+          <div class="right-burger">
+              <div class="top-bread text-center"><a href="#">Eaten Burger</a></div>
+                    {{#each burgers}}
+                        {{#if devoured}}
+                            {{> burgers/burger-block devoured=true}}
+                        {{/if}}
+                    {{/each}}
+                <div class="botton-bread"></div>
+          </div>         
+      </div>
+</div>

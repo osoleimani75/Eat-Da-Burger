@@ -1,0 +1,22 @@
+<div class="burger burgerFont">
+	<table>
+
+		<tr>
+			<td>
+				{{burger_name}}
+			</td>
+				{{#unless devoured}}
+					{{#unless demo }}
+						<td><button class="eatBtn" data-id={{id}}><i class="fas fa-utensils"></i></button></td>
+					{{/unless}}
+				{{/unless}}
+
+
+				{{#if devoured }}
+					{{#unless demo }}
+							<td> <button class="delBtn" data-id={{id}}><i class="fas fa-trash"></i></button></td>
+					{{/unless}}
+				{{/if}}
+		</tr>
+	</table>
+</div>
